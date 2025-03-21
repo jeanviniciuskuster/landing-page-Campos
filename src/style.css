@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap");
+
+* {
+  @media (max: width 450px;) @media (min: width 768px) and (max: width 1024px);
+
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  height: auto;
+  position: relative;
+  background-color: white;
+}
+
+/* nav{
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    margin-top: 10px;
+    
+} */
+
+/*nav bar*/
+nav .wrapper {
+
+  position: absolute;
+  top: 20px;
+  height: 10vh;
+  width: 100%;
+  
+}
+
+nav .nav-container {
+  width: 100%;
+  height: 80%;
+  margin: 1%;
+
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .nav-container img {/*logo cesar*/
+  width: 150px;
+  height: 90px;
+}
+
+nav .nav-container .links a { /*link barra navegaçao sobre, areas de atuacao, blog, contato */ 
+
+
+  font-size: 1.3rem;
+  color: black;
+  text-decoration: none;
+  margin:100% 15%
+  transition: 0.5s linear;
+  padding: 20px;
+
+}
+
+nav .nav-container .links a:hover {
+  color: rgb(145, 18, 18);
+}
+
+nav .nav-container .search {
+  width: 20;
+  box-shadow: 1px 10px 25px rgb(255, 0, 0);
+  height: 5vh;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgb(95, 27, 27);
+}
+nav .nav-container .search input {
+  width: 86%;
+  padding-left: 1%;
+  font-size: 1rem;
+  height: 100%;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+}
+nav .nav-container .search i {/*simbolo lupa*/
+  color: rgb(114, 7, 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  width: 14%;
+  cursor: pointer;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* landing page----------------------------------------------------------------------------------- */
+
+.landingpage {
+  background-image: url(images/back.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingpage .content {
+  display: flex;
+  margin-top: 1%;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+}
+
+.landingpage .content .heading {
+  margin-top: 10%;
+  max-width: 46%;
+  width: 100%;
+}
+
+.landingpage .content .heading h3 {
+  color: red;
+  font-size: 1.5rem;
+}
+.landingpage .content .heading h1 {
+  color: rgb(114, 86, 86);
+  line-height: -2rem;
+  font-size: 4rem;
+}
+.landingpage .content .heading p {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+.landingpage .content .heading button {
+  /*Primeiro botao do whats*/
+  width: 220px;
+  height: 50px;
+  margin: 20px;
+  cursor: pointer;
+  box-shadow: 20px 20px 25px rgb(255, 0, 0);
+  letter-spacing: 1.5px;
+  word-spacing: 5px;
+  background: rgb(172, 2, 2);
+  color: white;
+  border-radius: 20px;
+  font-family: "Patua One", serif;
+  transition: 0.2s linear;
+}
+
+.landingpage .content .heading button:hover {
+  scale: 1.05;
+}
+
+.landingpage .content .image img {
+  /*cesar foto2*/
+  width: 70%;
+  transform: rotate(40deg);
+}
+
+/* about us */
+.aboutus {
+  /* aqui é a o plano de fundo do Sobre */
+  box-shadow: -20px -20px 1000px rgb(0, 0, 0);
+  background: black;
+}
+
+.aboutus .container {
+  display: flex; /* Ativa o Flexbox */
+  align-items: center; /* Alinha os itens verticalmente */
+  justify-content: center;
+  gap: 20%; /* Espaçamento entre a imagem e o texto */
+  padding: 5%;
+
+  width: 100%;
+  height: 100%;
+}
+/*texto de apresentação*/
+.aboutus .container .aboutus-content {
+  max-width: 40rem;
+  color: white;
+  width: 50%;
+  font-family: "verdana", serif;
+}
+.aboutus .container img {
+  filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+}
+
+.aboutus .container img {
+  width: 35rem;
+  height: 35rem;
+}
+.aboutus .container .aboutus-content h1 {
+  text-align: center;
+
+  margin-bottom: 2%;
+  font-family: "Helvetica", serif;
+  color: rgba(252, 0, 0, 0.425);
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+}
+
+.aboutus .container .aboutus-content p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+/* services-servicos-------------------------------------*/
+
+.services-servicos {
+  background-color: rgb(155, 155, 155);
+}
+
+.services-servicos .title {
+  /*titulo area de atuação*/
+  width: 100%;
+  margin: 30px 0;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.services-servicos .title h1 {
+  font-size: 3rem;
+  color: rgb(94, 45, 45);
+  text-align: center;
+  width: 40%;
+}
+
+.services-servicos .servicos {
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(145, 145, 145);
+}
+.services-servicos .servicos .card {
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-servicos .servicos:hover .card {
+  scale: 1.1;
+  transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.services-servicos .servicos:hover .card:not(:hover) {
+  opacity: 0.2;
+  backdrop-filter: blur(10px);
+  scale: 1;
+}
+.services-servicos .servicos .card img {
+  width: 90%;
+  margin: 5%;
+  height: 50%;
+}
+
+.services-servicos .servicos .card .discription {
+  color: rgb(0, 0, 0);
+  margin: 0 10px;
+  text-align: center;
+}
+.services-servicos .servicos .card .discription h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  margin: 8px 0;
+  text-align: center;
+}
+
+.services-servicos .servicos .card .discription p {
+  float: left;
+  margin-left: 2px;
+}
+.services-servicos .servicos .card .discription {
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 10px 10px 10px;
+}
+
+/* secao localização --------------------------------------------------------------------------------*/
+
+.download {
+  background-color: rgb(0, 0, 0);
+}
+
+.download .container {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.download .container .image img {
+  width: 200%;
+  pointer-events: none;
+  margin-left: 40px;
+}
+
+.download .container .content {
+  /*  localicação*/
+  color: white;
+  width: 40%;
+}
+.download .container .content h1 {
+  font-size: 3rem;
+}
+.download .container .content p {
+  font-size: 1rem;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.download .container .content .icons {
+  width: 70%;
+  display: flex;
+  margin: 40px 20px;
+  justify-content: center;
+}
+.download .container .content .icons img {
+  width: 40%;
+  cursor: pointer;
+}
+
+/*mapbox*/
+
+.mapbox {
+  position: relative;
+  background: #000000;
+}
+
+.mapbox iframe {
+  width: 100vh;
+  height: 50vh;
+}
+
+ {
+  font-family: Arial, sans-serif;
+  padding: 1px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #ffffff;
+  align-items: center;
+  padding-top: 10px;
+}
+
+/*whatsapp link*/
+.whatsapp-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #690505;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  border: 1px solid black;
+  font-size: 20px;
+
+  margin-left: 700px;
+  margin-right: 700px;
+
+  cursor: pointer;
+  box-shadow: 20px 10px 30px rgb(255, 0, 0);
+  letter-spacing: 1.5px;
+  word-spacing: 1px;
+  font-family: "arial", serif;
+  transition: 0.5s linear;
+}
+.whatsapp-link:hover {
+  background-color: #128c7e;
+  transition: 0.2s linear;
+}
+.whatsapp-link i {
+  margin-top: 20px;
+}
+
+.segundowhats {
+  padding-top: 5%;
+  padding-right: 1%;
+  padding-left: 3%;
+}
+
+/* Estilos gerais ------------------------------------------------------------------------------------*/
+ {
+  font-family: arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.search i {
+  color: #888;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.search i:hover {
+  color: #333;
+}
+
+
+/*reponsive*/
+
+
+/*celulares*/
+@media (max-width: 425px) {
+
+  .nav .nav-container .links a { 
+
+  }
+}
+
+
+/*tablets*/
+@media (min-width: 768px) and (max-width: 1024px){
+}
+  .nav .nav-container .links a { 
+
+  }
+
+@media (max-width: 1200px) {
+
+.nav .nav-container .links a { 
+
+  display:flex;
+justify-content: space-between;
+display:flex;
+align-items:end;
+}
+}
+
+/*orientação horizontal*/
+@media(orientation:landscape) {
+
+}
+
+
+/*
+Copyright (C) [2025] [Cesar Augusto Schiebel De Campos]
+Este código é protegido por direitos autorais e não pode ser reutilizado sem permissão.
+*/
+
